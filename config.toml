@@ -1,0 +1,122 @@
+baseurl = "https://example.neiladamak.com"
+languageCode = "en-us"
+theme = "hugo-theme-stack"
+paginate = 5.0
+title = "Neila Damak"
+disqusShortname = "hugo-theme-stack"
+DefaultContentLanguage = "en"
+
+[permalinks]
+post = "/p/:slug/"
+page = "/:slug/"
+projects = "/:slug/"
+
+[params]
+mainSections = [
+  "post"
+]
+content = [
+  "projects"
+]
+
+featuredImageField = "image"
+rssFullContent = true
+
+  [params.footer]
+  since = 2020.0
+  githubName = "neila-damak"
+
+  
+
+  [params.dateFormat]
+  published = "Jan 02, 2006"
+  lastUpdated = "Jan 02, 2006 15:04 MST"
+
+  [params.sidebar]
+  subtitle = "ICT engineering student"
+
+    [params.sidebar.avatar]
+    local = true
+    src = "img/neila.jpg"
+
+  [params.article]
+  math = false
+
+    [params.article.license]
+    enabled = true
+    default = "Licensed under CC BY-NC-SA 4.0"
+
+  [params.comments]
+  enabled = true
+  provider = "disqus"
+
+    [params.comments.utterances]
+    issueTerm = "pathname"
+
+    [params.comments.remark42]
+
+  [params.widgets]
+  enabled = [
+  
+    "search",
+    "archives",
+    "tag-cloud"
+  ]
+
+    [params.widgets.archives]
+    limit = 5.0
+
+    [params.widgets.tagCloud]
+    limit = 10.0
+
+  [params.opengraph]
+
+    [params.opengraph.twitter]
+    card = "summary_large_image"
+
+  [params.defaultImage]
+
+    [params.defaultImage.opengraph]
+    enabled = false
+    local = false
+
+  [params.colorScheme]
+  toggle = true
+  default = "auto"
+
+  [params.imageProcessing]
+
+    [params.imageProcessing.cover]
+    enabled = true
+
+    [params.imageProcessing.content]
+    enabled = true
+
+[menu]
+
+
+
+  [[menu.main]]
+  identifier = "home"
+  name = "Posts"
+  url = "/"
+  weight = -100.0
+  pre = "hash"
+
+[related]
+includeNewer = true
+threshold = 60.0
+toLower = false
+
+  [[related.indices]]
+  name = "tags"
+  weight = 100.0
+
+  [[related.indices]]
+  name = "categories"
+  weight = 200.0
+
+[markup]
+
+  [markup.highlight]
+  noClasses = false
