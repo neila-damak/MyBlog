@@ -1,4 +1,4 @@
-baseurl = "https://example.neiladamak.com"
+baseurl = ""
 languageCode = "en-us"
 theme = "hugo-theme-stack"
 paginate = 5.0
